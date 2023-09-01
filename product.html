@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Project</title>
+
+    <!--linking font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--linking style sheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--nav section starts here-->
+<section id="header">
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="nav" class="hidden">
+            <ul class="nav-upper flex-space">
+                <li class="nav-upper__list">
+                    <a href="index.html" class="nav-upper__link"> Home </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="register.html" class="nav-upper__link"> Register </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="login.html" class="nav-upper__link"> Login </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="index.html" class="nav-upper__link"> Logout </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="contact.html" class="nav-upper__link"> Contact </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="profile.html" class="nav-upper__link"> 
+                        <img src="./profile.png" class="profile-icon" alt="profile"> 
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-lower flex-space">
+                <li class="nav-lower__list">
+                    <a href="index.html" class="nav-lower__brand"> Smart buy shopping express </a>
+                </li>
+                <li class="nav-lower__list">
+                    <a href="cart.html" class="nav-lowerr__link"> 
+                        <span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+    </nav>
+
+</section>
+<!--nav section ends here-->
+<main class="flex-center">
+    <div class="main-content">
+        <section class="product-details flex-center">
+            <div class="product-details__left flex-center">
+                <img class="product-details__img" src="/prod1.jpeg" alt="product1">
+            </div>
+            <div class="product-detials__right">
+                <h3 class="product__name">Apple Watch</h3>
+                 <p>
+                     <span class="dot green"></span>
+                     <span class="dot black"></span>
+                     <span class="dot red"></span>
+                 </p>
+                 <p class="product__desc">
+                     <strong>Description:</strong>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa voluptates voluptatum quia earum quo quos! Alias commodi, cum omnis deleniti id nemo dicta, neque vitae quaerat iste reprehenderit porro?
+                </p>
+            </br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus atque aut asperiores architecto. Perferendis assumenda fugiat, quod voluptatibus aliquam ipsam!
+                </p>
+                <h4 class="product__category"> Category:Headphones</h4>
+                 <h4 class="product__price">Price: $523.97</h4>
+                 <p class="product__rating"><strong>Rating:</strong> 4.9/5</p>
+                 <button class="btn product__btn">Add To Cart</button>
+                 <button class="btn product__btn">Back to shopping</button>
+            </div>
+              
+        </section>
+    </div>
+   
+</main>
+
+<!--footer section starts here-->
+<footer class="footer flex-space">
+    <div class="flex-space">
+        <label for="subscribe"> subscribe to News Letter</label>
+        <input type="email" name="subscribe" id="subscribe" class="footer__input" placeholder="your email"/>
+        <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy;CopyRight 2023 Smart Shopping Express. All Rights Reserved</p>
+    </div>
+
+</footer>
+<!--footer section ends here-->
+
+<script src="./index.js"></script>
+</body>
+</html>

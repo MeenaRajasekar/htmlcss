@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Project</title>
+
+    <!--linking font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--linking style sheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--nav section starts here-->
+<section id="header">
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="nav" class="hidden">
+            <ul class="nav-upper flex-space">
+                <li class="nav-upper__list">
+                    <a href="index.html" class="nav-upper__link"> Home </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="register.html" class="nav-upper__link"> Register </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="login.html" class="nav-upper__link"> Login </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="logout.html" class="nav-upper__link"> Logout </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="contact.html" class="nav-upper__link"> Contact </a>
+                </li>
+                <li class="nav-upper__list">
+                    <a href="profile.html" class="nav-upper__link"> 
+                        <img src="./profile.png" class="profile-icon" alt="profile"> 
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-lower flex-space">
+                <li class="nav-lower__list">
+                    <a href="index.html" class="nav-lower__brand"> Smart buy shopping express </a>
+                </li>
+                <li class="nav-lower__list">
+                    <a href="cart.html" class="nav-lowerr__link"> 
+                        <span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+    </nav>
+
+</section>
+<!--nav section ends here-->
+<main>
+   <section class="contact-section">
+       <h2 class="section-title">
+           Contact Us
+       </h2>
+        <div class="contact-container flex-center">
+        
+            <div class="register__card-inputs ">
+             <form  class="form card">
+              <div class="form-control flex-center">    
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+              </div>
+             <div class="form-control flex-center"> 
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email">
+             </div>
+              <div class="form-control flex-center">
+              <label for="msg">Message</label>
+              <textarea name="msg" id="msg"></textarea>
+              </div> 
+              <button class="btn">Submit</button>
+            </form>
+            </div>
+          
+    
+        
+          <div class="contact-addr flex-space">
+            <address>
+                <h4>Address:</h4>
+                <p>123 High street</p>
+                <p>Uilensted, Amstelveen</p>
+                <br>
+                <span>Call:</span>
+                <a href="tel:+316574321">+316574321</a>
+                </address>
+                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4465389907705!2d5.113012977141904!3d51.52336917181709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6bf813c2fe70f%3A0x8bb58fccaff5a081!2sBeekse%20Bergen!5e0!3m2!1sen!2snl!4v1681478062850!5m2!1sen!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </address>
+          </div>  
+        </div>
+   </section>
+</main>
+
+<!--footer section starts here-->
+<footer class="footer flex-space">
+    <div class="flex-space">
+        <label for="subscribe"> subscribe to News Letter</label>
+        <input type="email" name="subscribe" id="subscribe" class="footer__input" placeholder="your email"/>
+        <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy;CopyRight 2023 Smart Shopping Express. All Rights Reserved</p>
+    </div>
+
+</footer>
+<!--footer section ends here-->
+
+<script src="./index.js"></script>
+</body>
+</html>
